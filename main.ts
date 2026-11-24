@@ -7,14 +7,16 @@
 // single-word shape before anything is written, and the same word is
 // printed to stdout.
 //
-// The word: "Bosszilla" — the boss as a giant monster stomping through the
-// office. A fun first pick, but it leans on a generic monster joke rather
-// than on anything specific about how this boss actually behaves.
+// The word: "Meeting-breeder" — the boss whose main output is spawning
+// new meetings: every meeting ends with two more meetings scheduled.
+// It replaced the draft word "Bosszilla", which was a generic monster
+// joke; this one names the specific, painfully true behaviour — the
+// calendar that only ever grows — so it is both funnier and truer.
 
 import { mkdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-const WORD = "Bosszilla";
+const WORD = "Meeting-breeder";
 
 const charCount = [...WORD].length;
 if (charCount < 1 || charCount > 30) {

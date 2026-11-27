@@ -11,13 +11,13 @@ bounty on [make.fun](https://make.fun/r/0ene8b3q).
 
 ## The word
 
-> Meeting-breeder
+> Micromandator
 
 ## How it works
 
 `main.ts` (Node 22+, standard library only) writes the word to
 `$MAKEFUN_OUTPUT_DIR/entry.txt` (default `/output/entry.txt`) — one word,
-UTF-8, no trailing newline, 15 characters, within the 1–30 character limit.
+UTF-8, no trailing newline, 13 characters, within the 1–30 character limit.
 It guards the length (1–30 characters, not only white space), rejects any
 space or control character so the entry stays a single word, writes the
 file, then reads it back and fails loudly if the read-back differs from the

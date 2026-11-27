@@ -7,16 +7,18 @@
 // single-word shape before anything is written, and the same word is
 // printed to stdout.
 //
-// The word: "Meeting-breeder" — the boss whose main output is spawning
-// new meetings: every meeting ends with two more meetings scheduled.
-// It replaced the draft word "Bosszilla", which was a generic monster
-// joke; this one names the specific, painfully true behaviour — the
-// calendar that only ever grows — so it is both funnier and truer.
+// The word: "Micromandator" — a micromanager with dictator energy: the
+// boss who dictates every keystroke, then demands to be thanked for it.
+// It replaced the round-1 word "Meeting-breeder", which named one
+// behaviour (spawning meetings); this one names the deeper, more
+// universal truth — a boss who controls everything and still acts like
+// a ruler — so it is funnier, truer, and fresher: it is a single invented
+// portmanteau, not a two-word mashup of a common complaint.
 
 import { mkdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-const WORD = "Meeting-breeder";
+const WORD = "Micromandator";
 
 const charCount = [...WORD].length;
 if (charCount < 1 || charCount > 30) {
